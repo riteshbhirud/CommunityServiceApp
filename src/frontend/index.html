@@ -1,14 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Web Application</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-View App</title>
+    <link rel="stylesheet" href="des.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
-<header>
-<h1>Welcome to My Web Application</h1>
-</header>
-<p>This is a simple test HTML file to get
-you started with your project.</p>
-<button id="testButton">Click Me</button>
+    <nav>
+        <button id="home">Home</button>
+        <button id="Current Listings">Current Listings</button>
+        <button id="about">About</button>
+        <button id="myPage">MyPage</button>
+    </nav>
+
+    <div id="views">      
+        <div id="homeView" class="view">
+            <div class="content">
+                <div class="text">
+                    <h1>Discover & Volunteer Your Time</h1>
+                    <p>Find meaningful opportunities, track your impact, and make a difference</p>
+                </div>
+                <div class="image">
+                    <img src="https://media.istockphoto.com/id/1235560086/vector/hands-up-colorful-icon-vector-design.jpg?s=612x612&w=0&k=20&c=MiaZLXa7MaPphMO3HxZHhzKxCzxK-RDVsyfkF6GCP7g=" alt="Community Service">
+                </div>
+                <div id = "FindListingsButton">
+                    <input type ="button" value="See Current Listings" id ="FindListingsButton">
+                </div>
+            </div>
+        </div>
+        <div id="CurrentListingsView" class="view">
+            <h1>Your Profile</h1>
+            <p>This section could display user profile information. For now, here's a list of some hobbies:</p>
+            <ul>
+                <li>Coding</li>
+                <li>Hiking</li>
+                <li>Reading</li>
+                <li>Photography</li>
+            </ul>
+        </div>
+        <div id="aboutView" class="view">
+            <h1>About This App</h1>
+            <p>This app demonstrates a simple way to navigate between different views using vanilla JavaScript, HTML, and CSS. It's designed as an educational tool to help understand the basics of web development.</p>
+            <p>Here's a placeholder for an app logo or image:</p>
+            <div class="image-container" style="text-align:center; margin:20px;">
+                <img src="https://via.placeholder.com/150" alt="App Logo" style="border-radius:8px;">
+                <img src="https://via.placeholder.com/175" alt="App Logo" style="border-radius:8px;">
+                <img src="https://via.placeholder.com/185" alt="App Logo" style="border-radius:8px;">
+                <img src="https://via.placeholder.com/195" alt="App Logo" style="border-radius:8px;">
+                <img src="https://via.placeholder.com/205" alt="App Logo" style="border-radius:8px;">
+                <img src="https://via.placeholder.com/215" alt="App Logo" style="border-radius:8px;">
+            </div>
+        </div>
+        <div id="myPageView" class="view">
+            <h1>My Page</h1>
+            <p>This is the MyPage view.</p>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,112 @@
+/* Reset default margin and padding */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(238,244,244);
+}
+
+/* Container style */
+#homeView {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Content layout */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Adjust the max-width as needed */
+  margin: 0 auto;
+  gap: 20px; /* Adjust the gap between the text and the image */
+}
+
+.text {
+  flex: 1;
+}
+#FindListingsButton{
+  position: fixed;
+  bottom: 390px; /* 20px from the bottom */
+  left: 300px; /* 20px from the right */
+  background-color: rgb(134,175,175);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: Add some rounding to the image corners */
+}
+
+nav {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+nav button {
+  background-color: rgb(134,175,175);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: rgb(134,175,175);
+}
+
+#views {
+  padding: 20px;
+  text-align: center;
+  background-color:rgb(238,244,244);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.view {
+  display: none;
+  /* Hide all views by default */
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+img:hover {
+  animation: wiggle 0.5s ease-in-out infinite;
+}
