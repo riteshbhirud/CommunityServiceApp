@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi-View App</title>
+    <title>VolunteerMatch</title>
     <link rel="stylesheet" href="des.css">
-    <script src="app.js" defer></script>
+    <script src="interaction.js" defer></script>
 </head>
 <body>
     <nav>
         <button id="home">Home</button>
-        <button id="Current Listings">Current Listings</button>
+        <button id="currentListings">Current Listings</button>
         <button id="about">About</button>
-        <button id="myPage">MyPage</button>
+        <button id="myPage">My Profile</button>
     </nav>
 
     <div id="views">      
@@ -25,37 +25,118 @@
                 <div class="image">
                     <img src="https://media.istockphoto.com/id/1235560086/vector/hands-up-colorful-icon-vector-design.jpg?s=612x612&w=0&k=20&c=MiaZLXa7MaPphMO3HxZHhzKxCzxK-RDVsyfkF6GCP7g=" alt="Community Service">
                 </div>
-                <div id = "FindListingsButton">
-                    <input type ="button" value="See Current Listings" id ="FindListingsButton">
+                <div>
+                    <input type="button" value="See Current Listings" id="findListingsButton">
                 </div>
             </div>
         </div>
-        <div id="CurrentListingsView" class="view">
-            <h1>Your Profile</h1>
-            <p>This section could display user profile information. For now, here's a list of some hobbies:</p>
-            <ul>
-                <li>Coding</li>
-                <li>Hiking</li>
-                <li>Reading</li>
-                <li>Photography</li>
-            </ul>
+        <div id="currentListingsView" class="view">
+            <h1>Current Opportunities</h1>
+            <p>Here you can browse for all available opportunities to volunteer</p>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Title</h3>
+                    <p>Community Clean-up</p>
+                    <h4>Description</h4>
+                    <p>Help clean local parks and streets</p>
+                    <h4>Location</h4>
+                    <p>City Park</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Title</h3>
+                    <p>Food Drive</p>
+                    <h4>Description</h4>
+                    <p>Collect food donations for local shelters</p>
+                    <h4>Location</h4>
+                    <p>Downtown Community Center</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Title</h3>
+                    <p>Tutoring Program</p>
+                    <h4>Description</h4>
+                    <p>Assist students with homework and projects</p>
+                    <h4>Location</h4>
+                    <p>City Library</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Title</h3>
+                    <p>Senior Center Activities</p>
+                    <h4>Description</h4>
+                    <p>Organize games and events for seniors</p>
+                    <h4>Location</h4>
+                    <p>Sunset Senior Center</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Title</h3>
+                    <p>Animal Shelter Volunteer</p>
+                    <h4>Description</h4>
+                    <p>Care for animals and assist with adoptions</p>
+                    <h4>Location</h4>
+                    <p>Happy Paws Animal Shelter</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Title</h3>
+                    <p>Environmental Conservation</p>
+                    <h4>Description</h4>
+                    <p>Plant trees and maintain nature trails</p>
+                    <h4>Location</h4>
+                    <p>National Park</p>
+                </div>
+            </div>
         </div>
         <div id="aboutView" class="view">
             <h1>About This App</h1>
-            <p>This app demonstrates a simple way to navigate between different views using vanilla JavaScript, HTML, and CSS. It's designed as an educational tool to help understand the basics of web development.</p>
-            <p>Here's a placeholder for an app logo or image:</p>
-            <div class="image-container" style="text-align:center; margin:20px;">
-                <img src="https://via.placeholder.com/150" alt="App Logo" style="border-radius:8px;">
-                <img src="https://via.placeholder.com/175" alt="App Logo" style="border-radius:8px;">
-                <img src="https://via.placeholder.com/185" alt="App Logo" style="border-radius:8px;">
-                <img src="https://via.placeholder.com/195" alt="App Logo" style="border-radius:8px;">
-                <img src="https://via.placeholder.com/205" alt="App Logo" style="border-radius:8px;">
-                <img src="https://via.placeholder.com/215" alt="App Logo" style="border-radius:8px;">
-            </div>
+            <p>Welcome to our Volunteer Platform, where we connect compassionate individuals with meaningful opportunities to make a positive impact in their communities. Our mission is to empower people to contribute their time and skills to causes they care about, fostering a spirit of volunteerism and community engagement.</p>
+            
+            <h2>Our Vision</h2>
+            <p>We envision a world where everyone has the opportunity to give back and make a difference. By bringing together volunteers and organizations, we aim to create a network of support that addresses various social, environmental, and community needs.</p>
+            
+            <h2>How It Works</h2>
+            <p>Our platform is designed to make finding and participating in volunteer opportunities easy and accessible. Here’s how you can get started:</p>
+            <ol>
+                <li><strong>Browse Opportunities</strong>: Explore a wide range of volunteer activities, from community clean-ups and food drives to tutoring programs and animal shelter assistance. Each listing provides detailed information about the role, location, and how you can help.</li>
+                <li><strong>Sign Up and Get Involved</strong>: Once you find an opportunity that resonates with you, sign up directly through our platform. We provide all the necessary details to ensure you are well-prepared to make the most of your volunteering experience.</li>
+                <li><strong>Track Your Impact</strong>: Keep track of the hours you’ve volunteered and the impact you’ve made. Our platform allows you to see the difference you are making, motivating you to continue your journey of giving back.</li>
+            </ol>
+            
+            <h2>Why Volunteer?</h2>
+            <p>Volunteering is a powerful way to contribute to the well-being of your community and beyond. It offers numerous benefits, including:</p>
+            <ul>
+                <li><strong>Personal Growth</strong>: Develop new skills, gain valuable experiences, and build confidence.</li>
+                <li><strong>Community Connection</strong>: Meet like-minded individuals and create lasting bonds with people in your community.</li>
+                <li><strong>Positive Impact</strong>: Make a tangible difference in the lives of others and the environment.</li>
+                <li><strong>Health and Well-being</strong>: Volunteering has been shown to reduce stress, combat depression, and provide a sense of purpose.</li>
+            </ul>
+            
+            <h2>Join Us</h2>
+            <p>Whether you are looking to volunteer once a week or once a year, our platform offers a variety of opportunities to fit your schedule and interests. Join us in making a positive impact and helping to build stronger, more connected communities.</p>
+            
+            <p>Thank you for being a part of our mission to inspire and support volunteerism. Together, we can create a brighter future for all.</p>
         </div>
         <div id="myPageView" class="view">
-            <h1>My Page</h1>
-            <p>This is the MyPage view.</p>
+            <h1>My Profile</h1>
+            <p>Please set your profile for organizations to view when you choose to join one</p>
+            <div id="NameForm">
+                <label for="Fname">First Name: </label>
+                <input type="text" id="Fname" class="ProfileUpdate" required/>
+                <label for="Lname">Last Name: </label>
+                <input type="text" id="Lname" class="ProfileUpdate" required/>
+            </div>
+            <div id="EmailPhoneForm">
+                <label for="EmailID">Email: </label>
+                <input type="email" id="EmailID" class="ProfileUpdate" required/>
+                <label for="PhoneNum">Phone Number: </label>
+                <input type="tel" id="PhoneNum" class="ProfileUpdate" required/>
+            </div>
+            <div id ="AgeZip">
+                <label for="zipcodeText">Zip Code: </label>
+                <input type="number" maxlength="5" id ="zipcodeText" class="ProfileUpdate" required/>
+                <label for="AgeText">Age: </label>
+                <input type="number" maxlength="3" id="AgeText" class="ProfileUpdate" required/>
+            </div>
+            <div id="SubmitButton">
+                <input type="button" id="ProfileSetButton" value="Update" disabled/>
+            </div>
         </div>
     </div>
 </body>
