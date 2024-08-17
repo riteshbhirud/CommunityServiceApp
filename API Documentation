@@ -1,0 +1,78 @@
+API Documentation
+
+The back-end server provides a RESTful API for managing user profiles. Below are the details of each API endpoint, including the HTTP methods, request body formats, and response structures.
+
+Endpoints
+
+1. PUT /api/profile
+
+	•	Purpose: Create or update the user profile.
+	•	HTTP Method: PUT
+	•	Endpoint: /api/profile
+	•	Request Body:
+    {
+  "Fname": "John",
+  "Lname": "Doe",
+  "EmailID": "john.doe@example.com",
+  "PhNum": "123-456-7890",
+  "ZipCode": "12345",
+  "Age": "30"
+}
+
+	•	Response:
+	•	Status: 200 OK
+	•	Body:
+    {
+  "message": "Profile created/updated successfully",
+  "id": "profile",
+  "rev": "revision-id"
+}
+
+2. GET /api/profile
+
+	•	Purpose: Retrieve the user profile.
+	•	HTTP Method: GET
+	•	Endpoint: /api/profile
+	•	Response:
+	•	Status: 200 OK
+	•	Body:
+    {
+  "_id": "profile",
+  "_rev": "revision-id",
+  "Fname": "John",
+  "Lname": "Doe",
+  "EmailID": "john.doe@example.com",
+  "PhNum": "123-456-7890",
+  "ZipCode": "12345",
+  "Age": "30"
+}
+
+•	Status (if no profile exists): 404 Not Found
+	•	Body:
+    {
+  "error": "Profile not found"
+}
+3. DELETE /api/profile
+
+	•	Purpose: Delete the user profile.
+	•	HTTP Method: DELETE
+	•	Endpoint: /api/profile
+	•	Response:
+	•	Status: 200 OK
+	•	Body:
+    {
+  "message": "Profile deleted successfully"
+}
+	Status (if no profile exists): 404 Not Found
+	•	Body:
+    {
+  "error": "Profile not found"
+}
+	•	The application uses PouchDB to store user profile data locally within the server.
+	•	The API endpoints use JSON format for both requests and responses.
+	•	Ensure that the Express.js server is running before interacting with the API from the front-end.
+
+    Error Handling
+
+	•	The server provides appropriate status codes and error messages for different scenarios, such as when a profile is not found (404 Not Found) or when a server error occurs (500 Internal Server Error).
+	•	The front-end includes basic error handling to display issues to the user.

@@ -23,9 +23,9 @@ html {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px; /* Adjust the max-width as needed */
+  max-width: 1200px; 
   margin: 0 auto;
-  gap: 20px; /* Adjust the gap between the text and the image */
+  gap: 20px; 
 }
 
 .text {
