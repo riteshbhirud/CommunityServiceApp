@@ -76,3 +76,4 @@ Endpoints
 
 	•	The server provides appropriate status codes and error messages for different scenarios, such as when a profile is not found (404 Not Found) or when a server error occurs (500 Internal Server Error).
 	•	The front-end includes basic error handling to display issues to the user.
+ 

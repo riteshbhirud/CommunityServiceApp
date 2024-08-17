@@ -26,6 +26,9 @@ app.put('/api/profile', async (req, res) => {
       profile._id = 'profile';
     }
 
+
+
+
     const response = await db.put(profile);
     res.status(200).json({ message: "Profile created/updated successfully", id: response.id, rev: response.rev });
   } catch (error) {
